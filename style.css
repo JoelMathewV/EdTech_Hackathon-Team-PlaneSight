@@ -1,0 +1,433 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+:root {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    max-height: 60px;
+  }
+  
+  
+  
+  a {
+    color: #4154f1;
+    text-decoration: none;
+  }
+  
+  html link{
+    display:block;
+    width:150px;
+    height:77px;
+  }
+  
+  a:hover {
+    color: #717ff5;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+  }
+
+  /*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-header {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+  }
+  
+  .section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #012970;
+  }
+  
+  @media (max-width: 768px) {
+    .section-header p {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+
+  /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 10px 0;
+  }
+  
+  .header.header-scrolled {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  }
+  
+  .header .logo {
+    line-height: 3;
+  }
+  
+  .header .logo img {
+    max-height: 80px;
+    margin-right: 6px;
+  }
+  
+  .header .logo span {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #012970;
+    font-family: "Nunito", sans-serif;
+    margin-top: 3px;
+  }
+
+  /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+    padding: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #013289;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #4154f1;
+  }
+
+  /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(img/hero\ -\ bg.jpg) top center no-repeat;
+    background-size: cover;
+  }
+
+  .hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+  }
+  
+  .hero h2 {
+    color: #444444;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+  }
+  
+  .hero .btn-get-started {
+    margin-top: 30px;
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  }
+  
+  .hero .btn-get-started span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .hero .btn-get-started i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .hero .btn-get-started:hover i {
+    transform: translateX(5px);
+  }
+  
+  .hero .hero-img {
+    text-align: right;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .hero {
+      height: auto;
+      padding: 120px 0 60px 0;
+    }
+    .hero .hero-img {
+      text-align: center;
+      margin-top: 80px;
+    }
+    .hero .hero-img img {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 32px;
+    }
+    .hero h2 {
+      font-size: 24px;
+    }
+    .hero .hero-img img {
+      width: 100%;
+    }
+  }
+  /* Search bar  */
+  /* @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  /* .wrap{
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }  */
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: white; /* white background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+    color: blue;
+  }
+
+  
+ 
+  /* create */
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid lightblue; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+/* rating */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
