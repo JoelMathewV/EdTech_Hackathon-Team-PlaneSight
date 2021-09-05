@@ -15,13 +15,12 @@ This project was first meant to address the topic "where to start" but as we wen
 3. It solves "EdTech for Rural India" issue cause one of the main problems they face is they money, resources and right guidance. With our website we are tackling all those issues cause its free and open source, resources are organised for a newbie, the playlists are made by someone who have already followed it.
 
 ## Technologies used
-HTML, CSS, JavaScript, jQuery
+HTML, CSS, JavaScript, jQuery, elfsight(https://apps.elfsight.com/panel/applications/)
 
 ## Steps for installation
-// step by step procedure with prequisiites for installation of the product 
-on a local enviornment
-
-## App/Web link if hosted (recommended but optional)
+To run this project on ur local repo-
+1. clone the main branch to your local environment
+2. click and run the the index.html file
 
 ## Video Demo (Mandatory)
 // link of video demo. you can upload video on google drive. Make sure that
