@@ -1,5 +1,4 @@
-# Project Name
-LearnTube
+# Project Name - LearnTube
 
 ## About the Project
 When anyone wants to learn about a technology or wants to starts to learn something new, most probably he would be looking for it on YouTube. Why? because it is the best place for one to find videos and tutorials on any topic that they wish to learn for free. But the main drawback of learning from YouTube is that it's too much cluttered now and there are lot of videos on same topics which newbie gets overwhelmed at first to select which one to follow. With this project our aim is to organise the clutter in the YouTube and make it more approachable to find the resources from YouTube for all the newbies out there.
@@ -14,6 +13,8 @@ This project was first meant to address the topic "where to start" but as we wen
 
 3. It solves "EdTech for Rural India" issue cause one of the main problems they face is they money, resources and right guidance. With our website we are tackling all those issues cause its free and open source, resources are organised for a newbie, the playlists are made by someone who have already followed it.
 
+The ambition and goal of our project was big but to create it needed more experience with development. The project that we could pull off were not the exact idea we had in mind partly due to our lack of experience and knowledge as we were new to web development and hackathons. But we believe it could turn into something big in future after working on it more.
+
 ## Technologies used
 HTML, CSS, JavaScript, jQuery, elfsight(https://apps.elfsight.com/panel/applications/)
 
@@ -22,10 +23,5 @@ To run this project on ur local repo-
 1. clone the main branch to your local environment
 2. click and run the the index.html file
 
-## Video Demo (Mandatory)
-// link of video demo. you can upload video on google drive. Make sure that
-video is accessible for anyone with the link.
-
-## Screenshots (Mandatory)
-// Screenshots regarding your project. you can provide a drive folder link with
-screenshots or upload it on github itself.
+## Video Demo and Screenshots
+google drive link - 
