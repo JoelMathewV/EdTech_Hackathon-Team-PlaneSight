@@ -24,4 +24,4 @@ To run this project on ur local repo-
 2. click and run the the index.html file
 
 ## Video Demo and Screenshots
-google drive link - 
+google drive link - https://drive.google.com/drive/folders/1D0kE-aR_eK0gEb6dIFZ-cbAje1rw88hb?usp=sharing
